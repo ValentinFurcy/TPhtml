@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="d-flex justify-content-center align-items-center ">
+    <form method="post" action="" class="d-flex wrap">
+        <div class="d-flex row">
+            <div class="column-2">
+                <label for="email" class="required">Email</label>
+                <input type="email" name="email" id="email">
+                <span id="email-message" class="span-message">Votre email vous servira d'identifiant</span>
+            </div>
+            <div class="column-2">
+                <label for="confirm-email" class="required">Confirmation de l'email</label>
+                <input type="email" name="confirm_email" id="confirm-email">
+                <span id="confirm-email-message"></span>
+            </div>
+        </div>
+        <div class="d-flex row">
+            <div class="column-2">
+                <label for="password" class="required">Mot de passe</label>
+                <input type="password" name="password" id="password">
+                <span id="password-criteria"></span>
+            </div>
+            <div class="column-2">
+                <label for="confirm-password" class="required">Confirmation du mot de passe</label>
+                <input type="password" name="confirm_password" id="confirm-password">
+                <span id="confirm-password-message"></span>
+            </div>
+        </div>
+        <div class="d-flex column-2 start">
+            <button type="submit" value="envoyer" class="end">Envoyer</button>
+        </div>
+    </form>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

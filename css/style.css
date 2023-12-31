@@ -1,0 +1,96 @@
+/* flex ***********************************************************/
+.d-flex {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+
+.column-2 {
+    flex: 2;
+    margin: 20px;
+}
+
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.start {
+    justify-content: flex-start;
+}
+
+/* fin flex ***********************************************************/
+body {
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.valid {
+    color: green;
+}
+
+.invalid{
+    color:red;
+}
+
+form {
+    background-color: rgba(213, 228, 227, 0.5);
+    border-radius: 2px;
+    padding: 20px 60px 40px 20px;
+    margin: auto;
+    width: 600px;
+    height: auto;
+}
+
+input {
+    width: 100%;
+    margin: 10px 0 5px 0;
+    padding: 5px;
+}
+
+label {
+    font-weight: bold;
+}
+
+label.required::after {
+    content: " *";
+    color: red;
+}
+
+button {
+    background-color: #fdd507;
+    border: solid 1px;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.span-message {
+    color: rgba(72, 80, 79, 0.527);
+}
+
+/* Média queries pour les écrans de moins de 992px */
+@media (max-width: 992px) {
+
+    .row,
+    .column-2 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    button {
+        width: auto;
+        max-width: 50%;
+    }
+}
